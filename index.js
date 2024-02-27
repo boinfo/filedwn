@@ -4,6 +4,7 @@ const admin = require('firebase-admin');
 const express = require('express');
 const app = express();
 
+
 // Initialize Firebase Admin SDK
 const serviceAccount = require('./serviceAccountKey.json'); // Assuming the JSON key file is in the current folder
 admin.initializeApp({
