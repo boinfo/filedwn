@@ -11,6 +11,11 @@ admin.initializeApp({
   storageBucket: 'audiofiles-82ffa.appspot.com', // Your Firebase Storage bucket URL
 });
 
+
+app.get('/', async function (req, res) {
+res.json({status:"ok"});
+});
+
 const bucket = admin.storage().bucket();
 
 app.get('/audio', async (req, res) => {
